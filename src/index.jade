@@ -2,42 +2,176 @@ doctype html
 html(lang="en")
     head
         title= GruntProjectTemplate
-        script(src="http://localhost:35729/livereload.js")
+
         link( rel="stylesheet" href="css/style.min.css")
+        script(defer src="js/jquery.min.js")
+        script(defer src="http://localhost:35729/livereload.js")
+        script(defer src="js/html5shiv.min.js")
+        script(defer src="js/respond.min.js")
+        script(defer src="js/bootstrap.min.js")
+        script(defer src="js/app.min.js")
     body
+        header.header
+            .container
+                .row
+                    .col-lg-2
+                        a.header__logotype(href="/")
+                            img(src="images/logotype.png")
+                    .col-lg-10
+                        nav.header__nav.pull-right
+                            ul.nav__list
+                                li.nav__list-item
+                                    a.list-item__link.list-item__link_active(href="#") home
+                                li.nav__list-item
+                                    a.list-item__link(href="#") services
+                                li.nav__list-item
+                                    a.list-item__link(href="#") features
+                                li.nav__list-item
+                                    a.list-item__link(href="#") portfolio
+                                li.nav__list-item
+                                    a.list-item__link(href="#") contact
+        .hero-block
+            .container.container_vertical-align
+                .row
+                    .col-lg-12
+                        h1.hero-block__title
+                            span.title__top-text “I’m looking for the unexpected.
+                            span.title__bottom-text I’m looking for things I’ve never seen before.”
         .wrapper
-            header.header
+            section.blue-block.services-block
                 .container
                     .row
                         .col-lg-12
-                            a.header__title(href="https://github.com/fair-man/GruntProjectTemplate") Grunt Project Template
-                            p.header__description Шаблон верстальщика для быстрого старта
-            main.main
-                .main__description
-                    .container
-                        .row
-                            .col-lg-12
-                                h3.main__desctiption-title что включено
-                                p Инструменты:
-                                ul.main__description-list
-                                    li.main__description-list_item grunt - сам Grunt.js
-                                    li.main__description-list_item grunt-contrib-jade - шаблонизатор Jade и препроцессор HTML
-                                    li.main__description-list_item grunt-contrib-imagemin - сжатие картинок
-                                    li.main__description-list_item grunt-spritesmith - генерация спрайтов
-                                    li.main__description-list_item grunt-contrib-less - препроцессор LESS
-                                    li.main__description-list_item grunt-contrib-cssmin - минификация CSS
-                                    li.main__description-list_item grunt-contrib-concat - сборка JS
-                                    li.main__description-list_item grunt-contrib-uglify - минификация JS
-                                    li.main__description-list_item grunt-contrib-watch - слежение за проектом при разработке
-                                    li.main__description-list_item grunt-contrib-connect - локальный сервер
-                                p Фреймворки и библиотеки:
-                                ul.main__description-list
-                                    li.main__description-list_item Jquery
-                                    li.main__description-list_item Bootstrap 3
-                                    li.main__description-list_item Html5shiv
-                                    li.main__description-list_item Respond
-    script(src="js/jquery.min.js")
-    script(src="js/html5shiv.min.js")
-    script(src="js/respond.min.js")
-    script(src="js/bootstrap.min.js")
-    script(src="js/app.min.js")
+                            h2.services-block__title.title_underline Services
+                    .row
+                        .col-lg-3.services-block__services-item
+                            h3.services-item__title.services-item__title-coffee Coffee
+                            p.services-item__description
+                                | Apple pie icing sweet. Brownie jelly-o applicake applicake
+                                | sweet roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie.
+                                | Tiramisu applicake jujubes.
+                        .col-lg-3.services-block__services-item
+                            h3.services-item__title.services-item__title-instant Instant
+                            p.services-item__description
+                                | Apple pie icing sweet. Brownie jelly-o applicake applicake
+                                | sweet roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie.
+                                | Tiramisu applicake jujubes.
+                        .col-lg-3.services-block__services-item
+                            h3.services-item__title.services-item__title-serious Serious
+                            p.services-item__description
+                                | Apple pie icing sweet. Brownie jelly-o applicake applicake
+                                | sweet roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie.
+                                | Tiramisu applicake jujubes.
+                        .col-lg-3.services-block__services-item
+                            h3.services-item__title.services-item__title-frame Frame
+                            p.services-item__description
+                                | Apple pie icing sweet. Brownie jelly-o applicake applicake
+                                | sweet roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie.
+                                | Tiramisu applicake jujubes.
+            section.white-block.portfolio-block
+                .container
+                    .row
+                        .col-lg-2
+                            h2.portfolio-block__title.title_underline.pull-left portfolio
+                        .col-lg-10
+                            ul.portfolio-block__list.pull-right
+                                li.list__item
+                                    a.list__item-link.list__item-link_active(href="#") all
+                                li.list__item
+                                    a.list__item-link(href="#") panoramas
+                                li.list__item
+                                    a.list__item-link(href="#") portraits
+                                li.list__item
+                                    a.list__item-link(href="#") macro
+                                li.list__item
+                                    a.list__item-link(href="#") journal
+                    .row.portfolio-block__gallery
+                        .col-lg-3.gallery__item
+                            img.gallery__item-img.img-responsive(src="images/img1.jpg")
+                        .col-lg-3.gallery__item
+                            img.gallery__item-img.img-responsive(src="images/img2.jpg")
+                        .col-lg-3.gallery__item
+                            img.gallery__item-img.img-responsive(src="images/img3.jpg")
+                        .col-lg-3.gallery__item
+                            img.gallery__item-img.img-responsive(src="images/img4.jpg")
+                        .col-lg-3.gallery__item
+                            img.gallery__item-img.img-responsive(src="images/img5.jpg")
+                        .col-lg-3.gallery__item
+                            img.gallery__item-img.img-responsive(src="images/img6.jpg")
+                        .col-lg-3.gallery__item
+                            img.gallery__item-img.img-responsive(src="images/img7.jpg")
+                        .col-lg-3.gallery__item
+                            img.gallery__item-img.img-responsive(src="images/img8.jpg")
+            section.video-block
+                .container
+                    .row
+                        .col-lg-6
+                            h2.title_underline Just default Section
+                            p.video-block__description
+                                span.description__top
+                                    | Bear claw marzipan bear claw applicake I love muffin. Lemon drops gummi bears pastry gummi
+                                    | bears sesame snaps I love unerdwear.com. Soufflé cotton candy dessert candy ice cream
+                                    | wafer gummies cheesecake brownie.
+                                span.description__bottom
+                                    | Muffin chupa chups jelly beans sweet pie applicake. Croissant chocolate cake I love
+                                    | pudding. Ice cream I love powder pudding apple pie marshmallow. Cupcake marzipan oat
+                                    | cake bonbon I love candy canes toffee.
+                            a.btn.btn-default.btn-grey(href="https://player.vimeo.com/video/152644113") visit me
+                        .col-lg-6
+                            <iframe src="https://player.vimeo.com/video/152644113" width="100%" height="315"
+                            | frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            section.blue-block.twitter-block
+                .container
+                    .row
+                        .col-lg-11
+                            h2.twitter-block__title.title_underline twitter
+                            p.twitter-block__description
+                                | Unerdwear cookie liquorice. Cake donut cupcake lollipop soufflé candy. Chocolate
+                                | oat cake
+                                span  @cheesecake
+                                |  tootsie roll.
+                        .col-lg-1.twitter-block__right
+                            a.twitter-link(href="https://twitter.com/?lang=ru")
+                                i.icon.icon-twitter
+            section.customer-block
+                .container
+                    .row
+                        .col-lg-12
+                            h2.customer-block__title.title_underline Who is john doe?
+                    .row
+                        .col-lg-6
+                            p.customer-block__description
+                                | Bear claw marzipan bear claw applicake I love muffin. Lemon drops gummi bears pastry
+                                | gummi bears sesame snaps I love unerdwear.com. Soufflé cotton candy dessert candy ice
+                                | cream wafer gummies cheesecake brownie.
+                            p.customer-block__description
+                                | Muffin chupa chups jelly beans sweet pie applicake. Croissant chocolate cake I love
+                                | pudding. Ice cream I love powder pudding apple pie marshmallow. Cupcake marzipan oat
+                                | cake bonbon I love candy canes toffee.
+                        .col-lg-6
+                            p.customer-block__description
+                                | Pudding dessert jujubes tiramisu gingerbread croissant tiramisu applicake. Sesame
+                                | snaps sugar plum cotton candy chocolate bonbon lemon drops candy canes cotton candy.
+                                | Cake toffee pie bear claw pastry.
+                            .social-block
+                                a.social-block__link(href="#")
+                                    i.icon.icon-twitter
+                                a.social-block__link(href="#")
+                                    i.icon.icon-gplus
+                                a.social-block__link(href="#")
+                                    i.icon.icon-dribbble
+                                a.social-block__link(href="#")
+                                    i.icon.icon-coffee
+            section.white-block.testimonials-block
+                .container
+                    .row
+                        .col-lg-11
+                            h2.testimonials-block__title.title_underline Testimonials
+                            p.testimonials-block__desctiption
+                                | Applicake chocolate cake wafer toffee pie soufflé wafer. Tart marshmallow wafer
+                                | macaroon cheesecake jelly. Gingerbread cookie soufflé sweet roll sweet roll jelly-o.
+                            span.testimonials-block__autor
+                                | -Walter White
+                        .col-lg-1
+                            .quote
+        footer.footer

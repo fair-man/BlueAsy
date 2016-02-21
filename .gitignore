@@ -6,6 +6,6 @@ libraries
 node_modules
 src/fonts
 src/images
-src/js
+src/js/app.js
 src/sprite
 src/tmp

@@ -16,6 +16,10 @@ body {
   background: @color-bg-base;
 }
 
+.container {
+  min-width: 320px;
+}
+
 .header {
   .line-height(150);
   .transition(all 0.22s ease-in);
@@ -99,6 +103,23 @@ body {
       margin-left: 0;
     }
   }
+
+  @media screen and (max-width: @screen-sm){
+    padding-left: 0;
+
+    .nav__list-item {
+      float: none;
+    }
+  }
+}
+
+.header__nav {
+  float: right;
+
+  @media screen and (max-width: 992px){
+      float: none;
+      padding-left: 0;
+  }
 }
 
 .hero-block {
@@ -148,6 +169,14 @@ body {
       display: inline-block;
       margin-bottom: 12px;
       text-transform: uppercase;
+    }
+  }
+
+  @media screen and (max-width: @screen-md){
+    height: 650px;
+
+    .container_vertical-align {
+      margin-top: -100px;
     }
   }
 }
@@ -451,6 +480,14 @@ body {
     margin-bottom: 23px;
     font-family: @font-segoe-regular;
   }
+
+  @media screen and (max-width: @screen-sm) {
+      .size(100%, 100%);
+
+      padding-top: 80px;
+      padding-bottom: 80px;
+
+  }
 }
 
 .social-block {
@@ -490,6 +527,14 @@ body {
     right: 0;
     left: 0;
     margin: auto;
+  }
+
+  @media screen and (max-width: @screen-sm) {
+    .social-block__link {
+      .size(52px, 52px);
+      margin-left: 10px;
+      margin-right: 10px;
+    }
   }
 }
 
@@ -534,6 +579,8 @@ body {
 }
 
 .header__navbar-body {
+  display: block;
+
   @media screen and (max-width: @screen-sm) {
     display: none;
     position: absolute;
@@ -541,10 +588,6 @@ body {
     left: 0;
     right: 0;
     background: @brand-primary;
-  }
-
-  @media screen and (min-width: @screen-sm){
-    display: block;
   }
 }
 

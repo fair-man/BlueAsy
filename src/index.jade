@@ -14,10 +14,10 @@ html(lang="en")
         header.header
             .container
                 .row
-                    .col-lg-2
+                    .col-lg-2.col-md-2.col-sm-3.col-xs-6
                         a.header__logotype(href="/")
                             img(src="images/logotype.png")
-                    .col-lg-10
+                    .col-lg-10.col-md-10.col-sm-9.header__navbar-body.collapse#demo
                         nav.header__nav.pull-right
                             ul.nav__list
                                 li.nav__list-item
@@ -30,6 +30,9 @@ html(lang="en")
                                     a.list-item__link(href="#") portfolio
                                 li.nav__list-item
                                     a.list-item__link(href="#") contact
+                    .col-sm-1.col-xs-6.navbar-open
+                        a(href="#" data-toggle="collapse" data-target="#demo")
+                            i.glyphicon.glyphicon-align-justify
         .hero-block
             .container.container_vertical-align
                 .row
@@ -44,25 +47,25 @@ html(lang="en")
                         .col-lg-12
                             h2.services-block__title.title_underline Services
                     .row
-                        .col-lg-3.services-block__services-item
+                        .col-lg-3.col-md-3.col-sm-3.col-xs-6.services-block__services-item
                             h3.services-item__title.services-item__title-coffee Coffee
                             p.services-item__description
                                 | Apple pie icing sweet. Brownie jelly-o applicake applicake
                                 | sweet roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie.
                                 | Tiramisu applicake jujubes.
-                        .col-lg-3.services-block__services-item
+                        .col-lg-3.col-md-3.col-sm-3.col-xs-6.services-block__services-item
                             h3.services-item__title.services-item__title-instant Instant
                             p.services-item__description
                                 | Apple pie icing sweet. Brownie jelly-o applicake applicake
                                 | sweet roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie.
                                 | Tiramisu applicake jujubes.
-                        .col-lg-3.services-block__services-item
+                        .col-lg-3.col-md-3.col-sm-3.col-xs-6.services-block__services-item
                             h3.services-item__title.services-item__title-serious Serious
                             p.services-item__description
                                 | Apple pie icing sweet. Brownie jelly-o applicake applicake
                                 | sweet roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie.
                                 | Tiramisu applicake jujubes.
-                        .col-lg-3.services-block__services-item
+                        .col-lg-3.col-md-3.col-sm-3.col-xs-6.services-block__services-item
                             h3.services-item__title.services-item__title-frame Frame
                             p.services-item__description
                                 | Apple pie icing sweet. Brownie jelly-o applicake applicake
@@ -71,9 +74,11 @@ html(lang="en")
             section.white-block.portfolio-block
                 .container
                     .row
-                        .col-lg-2
+                        .col-lg-2.col-md-2.col-sm-2.col-xs-6
                             h2.portfolio-block__title.title_underline.pull-left portfolio
-                        .col-lg-10
+                        .col-xs-6
+
+                        .col-lg-10.col-md-10.col-sm-10
                             ul.portfolio-block__list.pull-right
                                 li.list__item
                                     a.list__item-link.list__item-link_active(href="#") all
@@ -86,26 +91,26 @@ html(lang="en")
                                 li.list__item
                                     a.list__item-link(href="#") journal
                     .row.portfolio-block__gallery
-                        .col-lg-3.gallery__item
+                        .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
                             img.gallery__item-img.img-responsive(src="images/img1.jpg")
-                        .col-lg-3.gallery__item
+                        .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
                             img.gallery__item-img.img-responsive(src="images/img2.jpg")
-                        .col-lg-3.gallery__item
+                        .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
                             img.gallery__item-img.img-responsive(src="images/img3.jpg")
-                        .col-lg-3.gallery__item
+                        .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
                             img.gallery__item-img.img-responsive(src="images/img4.jpg")
-                        .col-lg-3.gallery__item
+                        .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
                             img.gallery__item-img.img-responsive(src="images/img5.jpg")
-                        .col-lg-3.gallery__item
+                        .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
                             img.gallery__item-img.img-responsive(src="images/img6.jpg")
-                        .col-lg-3.gallery__item
+                        .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
                             img.gallery__item-img.img-responsive(src="images/img7.jpg")
-                        .col-lg-3.gallery__item
+                        .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
                             img.gallery__item-img.img-responsive(src="images/img8.jpg")
             section.video-block
                 .container
                     .row
-                        .col-lg-6
+                        .col-lg-6.col-md-6
                             h2.title_underline Just default Section
                             p.video-block__description
                                 span.description__top
@@ -117,20 +122,20 @@ html(lang="en")
                                     | pudding. Ice cream I love powder pudding apple pie marshmallow. Cupcake marzipan oat
                                     | cake bonbon I love candy canes toffee.
                             a.btn.btn-default.btn-grey(href="https://player.vimeo.com/video/152644113") visit me
-                        .col-lg-6
+                        .col-lg-6.col-md-6
                             <iframe src="https://player.vimeo.com/video/152644113" width="100%" height="315"
                             | frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             section.blue-block.twitter-block
                 .container
                     .row
-                        .col-lg-11
+                        .col-lg-11.col-md-11.col-sm-11
                             h2.twitter-block__title.title_underline twitter
                             p.twitter-block__description
                                 | Unerdwear cookie liquorice. Cake donut cupcake lollipop soufflé candy. Chocolate
                                 | oat cake
                                 span  @cheesecake
                                 |  tootsie roll.
-                        .col-lg-1.twitter-block__right
+                        .col-lg-1.col-md-1.col-sm-1.twitter-block__right
                             a.twitter-link(href="https://twitter.com/?lang=ru")
                                 i.icon.icon-twitter
             section.customer-block
@@ -165,13 +170,13 @@ html(lang="en")
             section.white-block.testimonials-block
                 .container
                     .row
-                        .col-lg-11
+                        .col-lg-11.col-md-11.col-sm-11
                             h2.testimonials-block__title.title_underline Testimonials
                             p.testimonials-block__desctiption
                                 | Applicake chocolate cake wafer toffee pie soufflé wafer. Tart marshmallow wafer
                                 | macaroon cheesecake jelly. Gingerbread cookie soufflé sweet roll sweet roll jelly-o.
                             span.testimonials-block__autor
                                 | -Walter White
-                        .col-lg-1
+                        .col-lg-1.col-md-1.col-sm-1
                             .quote
         footer.footer

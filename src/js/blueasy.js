@@ -1,5 +1,3 @@
-;(function( window, undefined ){ 
- 'use strict'; 
 var $header = $(".header");
 
 $(window).scroll(function(){
@@ -9,5 +7,3 @@ $(window).scroll(function(){
         $header.removeClass("menu-white");
     }
 });
-
-}( window ));

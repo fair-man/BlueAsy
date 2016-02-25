@@ -12,3 +12,8 @@ $('.js-dropdown__link').on('click', function(e) {
     e.preventDefault();
     $('.portfolio-block__list').toggleClass('portfolio-block__list-open');
 });
+
+$('.js-dropdown__list').on('click','.list__item-link', function(e) {
+   var $elem = $(this);
+   $('.js-dropdown__link').html($elem.html());
+});

@@ -7955,9 +7955,6 @@ body {
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   border-radius: 7px;
-  padding-left: 15px;
-  padding-right: 5px;
-  border: 2px solid #515f67;
   float: right;
   text-transform: uppercase;
   color: #515f67;
@@ -8088,18 +8085,30 @@ body {
   right: 16px;
   min-width: 150px;
   z-index: 10;
-  border: 1px solid #515f67;
+  border: 2px solid #515f67;
   background: #ffffff;
 }
 .portfolio-block__list.portfolio-block__list-open .list__item {
   float: none;
   margin-left: 0;
 }
-.portfolio-block__list.portfolio-block__list-open .list__item .list__item-link {
+.portfolio-block__list.portfolio-block__list-open .list__item-link {
   display: block;
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+  color: #515f67;
+}
+.portfolio-block__list.portfolio-block__list-open .list__item-link:hover {
+  background: #4bcaff;
+  color: #ffffff;
+}
+.portfolio-block__list.portfolio-block__list-open .list__item-link:visited,
+.portfolio-block__list.portfolio-block__list-open .list__item-link:active {
+  text-decoration: none;
+}
+.portfolio-block__list.portfolio-block__list-open .list__item-link_active {
+  border: 0;
 }
 .portfolio-block__gallery {
   margin-top: 50px;

@@ -76,37 +76,74 @@ html(lang="en")
                     .row
                         .col-lg-2.col-md-2.col-sm-2.col-xs-6
                             h2.portfolio-block__title.title_underline.pull-left portfolio
-                        .col-xs-6
-
-                        .col-lg-10.col-md-10.col-sm-10
-                            ul.portfolio-block__list.pull-right
+                        .col-lg-10.col-md-10.col-sm-10.portfolio-block__dropdown.js-portfolio-block__dropdown
+                            a.portfolio-block__dropdown-link.js-dropdown__link(href="#") this is text
+                                b.caret
+                            ul.portfolio-block__list.js-dropdown__list
                                 li.list__item
-                                    a.list__item-link.list__item-link_active(href="#") all
+                                    a.list__item-link.list__item-link_active(href="#all" data-toggle="tab") all
                                 li.list__item
-                                    a.list__item-link(href="#") panoramas
+                                    a.list__item-link(href="#panoramas" data-toggle="tab") panoramas
                                 li.list__item
-                                    a.list__item-link(href="#") portraits
+                                    a.list__item-link(href="#portraits" data-toggle="tab") portraits
                                 li.list__item
-                                    a.list__item-link(href="#") macro
+                                    a.list__item-link(href="#macro" data-toggle="tab") macro
                                 li.list__item
-                                    a.list__item-link(href="#") journal
-                    .row.portfolio-block__gallery
-                        .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
-                            img.gallery__item-img.img-responsive(src="images/img1.jpg")
-                        .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
-                            img.gallery__item-img.img-responsive(src="images/img2.jpg")
-                        .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
-                            img.gallery__item-img.img-responsive(src="images/img3.jpg")
-                        .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
-                            img.gallery__item-img.img-responsive(src="images/img4.jpg")
-                        .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
-                            img.gallery__item-img.img-responsive(src="images/img5.jpg")
-                        .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
-                            img.gallery__item-img.img-responsive(src="images/img6.jpg")
-                        .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
-                            img.gallery__item-img.img-responsive(src="images/img7.jpg")
-                        .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
-                            img.gallery__item-img.img-responsive(src="images/img8.jpg")
+                                    a.list__item-link(href="#journal" data-toggle="tab") journal
+                    .tab-content
+                        .row.portfolio-block__gallery.tab-pane.active#all
+                            .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
+                                img.gallery__item-img.img-responsive(src="images/img1.jpg")
+                            .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
+                                img.gallery__item-img.img-responsive(src="images/img2.jpg")
+                            .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
+                                img.gallery__item-img.img-responsive(src="images/img3.jpg")
+                            .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
+                                img.gallery__item-img.img-responsive(src="images/img4.jpg")
+                            .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
+                                img.gallery__item-img.img-responsive(src="images/img5.jpg")
+                            .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
+                                img.gallery__item-img.img-responsive(src="images/img6.jpg")
+                            .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
+                                img.gallery__item-img.img-responsive(src="images/img7.jpg")
+                            .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
+                                img.gallery__item-img.img-responsive(src="images/img8.jpg")
+                        .row.portfolio-block__gallery.tab-pane#panoramas
+                            .col-lg-3
+                                img.gallery__item-img.img-responsive(src="images/img8.jpg")
+                            .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
+                                img.gallery__item-img.img-responsive(src="images/img3.jpg")
+                            .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
+                                img.gallery__item-img.img-responsive(src="images/img4.jpg")
+                            .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
+                                img.gallery__item-img.img-responsive(src="images/img5.jpg")
+                        .row.portfolio-block__gallery.tab-pane#portraits
+                            .col-lg-3
+                                img.gallery__item-img.img-responsive(src="images/img1.jpg")
+                            .col-lg-3
+                                img.gallery__item-img.img-responsive(src="images/img8.jpg")
+                            .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
+                                img.gallery__item-img.img-responsive(src="images/img3.jpg")
+                            .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
+                                img.gallery__item-img.img-responsive(src="images/img4.jpg")
+                            .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
+                                img.gallery__item-img.img-responsive(src="images/img5.jpg")
+                        .row.portfolio-block__gallery.tab-pane#macro
+                            .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
+                                img.gallery__item-img.img-responsive(src="images/img1.jpg")
+                            .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
+                                img.gallery__item-img.img-responsive(src="images/img8.jpg")
+                        .row.portfolio-block__gallery.tab-pane#journal
+                            .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
+                                img.gallery__item-img.img-responsive(src="images/img5.jpg")
+                            .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
+                                img.gallery__item-img.img-responsive(src="images/img6.jpg")
+                            .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
+                                img.gallery__item-img.img-responsive(src="images/img7.jpg")
+                            .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
+                                img.gallery__item-img.img-responsive(src="images/img1.jpg")
+                            .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
+                                img.gallery__item-img.img-responsive(src="images/img2.jpg")
             section.video-block
                 .container
                     .row
@@ -179,4 +216,60 @@ html(lang="en")
                                 | -Walter White
                         .col-lg-1.col-md-1.col-sm-1.col-xs-2
                             .quote
-        footer.footer
+            section.smoke-block
+                .container
+                    .row
+                        .col-lg-12.col-md-12.col-sm-12
+                            h2.smoke-block__title.title_underline contact
+                    .row
+                        .col-lg-12.col-md-12.col-sm-12
+                            .row
+                                form.smoke-block__contact-form
+                                    .col-lg-12.col-md-12.col-sm-12.contact-form__item
+                                        .row
+                                            .col-lg-5.col-md-5.col-sm-5
+                                                .form-group
+                                                    label.contact-form__text_uppecrace full name
+                                                    input.form-control(type="text")
+                                            .col-lg-6.col-lg-offset-1.col-md-7.col-sm-7
+                                                    p.input-description
+                                                        | Jujubes bear claw croissant wafer sweet lemon drops brownie chocolate bar.
+                                                        | Sweet lollipop halvah tootsie roll cake fruitcake. Chocolate cake chocolate
+                                                        | bar gingerbread lollipop tart. Jujubes bear claw donut chupa chups.
+                                    .col-lg-12.col-md-12.col-sm-12.contact-form__item
+                                        .row
+                                            .col-lg-5.col-md-5.col-sm-5
+                                                .form-group
+                                                    label.contact-form__text_uppecrace email
+                                                    input.form-control(type="text")
+                                            .col-lg-6.col-lg-offset-1.col-md-7.col-sm-7
+                                                    p.input-description
+                                                        | Linda Newman
+                                                        br
+                                                        | W325 State Road 123
+                                                        br
+                                                        | Mondovi, WI(Wisconsin) 98746-54321
+                                                        br
+                                                        | (715) 946 - 1234
+                                    .col-lg-12.col-md-12.col-sm-12.contact-form__item
+                                        .form-group
+                                            label.contact-form__text_uppecrace message
+                                            textarea.form-control.form-textarea
+                                    .col-lg-4.col-md-4.col-sm-4
+                                        .form-group
+                                            button.btn-contact-form message
+        footer.footer.bottom-block
+            .container
+                .row
+                    .col-lg-11.col-md-11.col-sm-11.col-xs-9
+                        ul.bottom-block__nav
+                            li.nav__item
+                                a.nav__item-link(href="#") home
+                            li.nav__item
+                                a.nav__item-link(href="#") services
+                            li.nav__item
+                                a.nav__item-link(href="#") portfolio
+                            li.nav__item
+                                a.nav__item-link(href="#") contact
+                    .col-lg-1.col-md-1.col-sm-1.col-xs-3
+                        span.bottom-block__copyright 2013&#169;

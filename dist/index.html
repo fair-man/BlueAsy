@@ -90,26 +90,51 @@
             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
               <h2 class="portfolio-block__title title_underline pull-left">portfolio</h2>
             </div>
-            <div class="col-xs-6"></div>
-            <div class="col-lg-10 col-md-10 col-sm-10">
-              <ul class="portfolio-block__list pull-right">
-                <li class="list__item"><a href="#" class="list__item-link list__item-link_active">all</a></li>
-                <li class="list__item"><a href="#" class="list__item-link">panoramas</a></li>
-                <li class="list__item"><a href="#" class="list__item-link">portraits</a></li>
-                <li class="list__item"><a href="#" class="list__item-link">macro</a></li>
-                <li class="list__item"><a href="#" class="list__item-link">journal</a></li>
+            <div class="col-lg-10 col-md-10 col-sm-10 portfolio-block__dropdown js-portfolio-block__dropdown"><a href="#" class="portfolio-block__dropdown-link js-dropdown__link">this is text<b class="caret"></b></a>
+              <ul class="portfolio-block__list js-dropdown__list">
+                <li class="list__item"><a href="#all" data-toggle="tab" class="list__item-link list__item-link_active">all</a></li>
+                <li class="list__item"><a href="#panoramas" data-toggle="tab" class="list__item-link">panoramas</a></li>
+                <li class="list__item"><a href="#portraits" data-toggle="tab" class="list__item-link">portraits</a></li>
+                <li class="list__item"><a href="#macro" data-toggle="tab" class="list__item-link">macro</a></li>
+                <li class="list__item"><a href="#journal" data-toggle="tab" class="list__item-link">journal</a></li>
               </ul>
             </div>
           </div>
-          <div class="row portfolio-block__gallery">
-            <div class="col-lg-3 col-md-3 col-xs-6 col-sm-4 gallery__item"><img src="images/img1.jpg" class="gallery__item-img img-responsive"></div>
-            <div class="col-lg-3 col-md-3 col-xs-6 col-sm-4 gallery__item"><img src="images/img2.jpg" class="gallery__item-img img-responsive"></div>
-            <div class="col-lg-3 col-md-3 col-xs-6 col-sm-4 gallery__item"><img src="images/img3.jpg" class="gallery__item-img img-responsive"></div>
-            <div class="col-lg-3 col-md-3 col-xs-6 col-sm-4 gallery__item"><img src="images/img4.jpg" class="gallery__item-img img-responsive"></div>
-            <div class="col-lg-3 col-md-3 col-xs-6 col-sm-4 gallery__item"><img src="images/img5.jpg" class="gallery__item-img img-responsive"></div>
-            <div class="col-lg-3 col-md-3 col-xs-6 col-sm-4 gallery__item"><img src="images/img6.jpg" class="gallery__item-img img-responsive"></div>
-            <div class="col-lg-3 col-md-3 col-xs-6 col-sm-4 gallery__item"><img src="images/img7.jpg" class="gallery__item-img img-responsive"></div>
-            <div class="col-lg-3 col-md-3 col-xs-6 col-sm-4 gallery__item"><img src="images/img8.jpg" class="gallery__item-img img-responsive"></div>
+          <div class="tab-content">
+            <div id="all" class="row portfolio-block__gallery tab-pane active">
+              <div class="col-lg-3 col-md-3 col-xs-6 col-sm-4 gallery__item"><img src="images/img1.jpg" class="gallery__item-img img-responsive"></div>
+              <div class="col-lg-3 col-md-3 col-xs-6 col-sm-4 gallery__item"><img src="images/img2.jpg" class="gallery__item-img img-responsive"></div>
+              <div class="col-lg-3 col-md-3 col-xs-6 col-sm-4 gallery__item"><img src="images/img3.jpg" class="gallery__item-img img-responsive"></div>
+              <div class="col-lg-3 col-md-3 col-xs-6 col-sm-4 gallery__item"><img src="images/img4.jpg" class="gallery__item-img img-responsive"></div>
+              <div class="col-lg-3 col-md-3 col-xs-6 col-sm-4 gallery__item"><img src="images/img5.jpg" class="gallery__item-img img-responsive"></div>
+              <div class="col-lg-3 col-md-3 col-xs-6 col-sm-4 gallery__item"><img src="images/img6.jpg" class="gallery__item-img img-responsive"></div>
+              <div class="col-lg-3 col-md-3 col-xs-6 col-sm-4 gallery__item"><img src="images/img7.jpg" class="gallery__item-img img-responsive"></div>
+              <div class="col-lg-3 col-md-3 col-xs-6 col-sm-4 gallery__item"><img src="images/img8.jpg" class="gallery__item-img img-responsive"></div>
+            </div>
+            <div id="panoramas" class="row portfolio-block__gallery tab-pane">
+              <div class="col-lg-3"><img src="images/img8.jpg" class="gallery__item-img img-responsive"></div>
+              <div class="col-lg-3 col-md-3 col-xs-6 col-sm-4 gallery__item"><img src="images/img3.jpg" class="gallery__item-img img-responsive"></div>
+              <div class="col-lg-3 col-md-3 col-xs-6 col-sm-4 gallery__item"><img src="images/img4.jpg" class="gallery__item-img img-responsive"></div>
+              <div class="col-lg-3 col-md-3 col-xs-6 col-sm-4 gallery__item"><img src="images/img5.jpg" class="gallery__item-img img-responsive"></div>
+            </div>
+            <div id="portraits" class="row portfolio-block__gallery tab-pane">
+              <div class="col-lg-3"><img src="images/img1.jpg" class="gallery__item-img img-responsive"></div>
+              <div class="col-lg-3"><img src="images/img8.jpg" class="gallery__item-img img-responsive"></div>
+              <div class="col-lg-3 col-md-3 col-xs-6 col-sm-4 gallery__item"><img src="images/img3.jpg" class="gallery__item-img img-responsive"></div>
+              <div class="col-lg-3 col-md-3 col-xs-6 col-sm-4 gallery__item"><img src="images/img4.jpg" class="gallery__item-img img-responsive"></div>
+              <div class="col-lg-3 col-md-3 col-xs-6 col-sm-4 gallery__item"><img src="images/img5.jpg" class="gallery__item-img img-responsive"></div>
+            </div>
+            <div id="macro" class="row portfolio-block__gallery tab-pane">
+              <div class="col-lg-3 col-md-3 col-xs-6 col-sm-4 gallery__item"><img src="images/img1.jpg" class="gallery__item-img img-responsive"></div>
+              <div class="col-lg-3 col-md-3 col-xs-6 col-sm-4 gallery__item"><img src="images/img8.jpg" class="gallery__item-img img-responsive"></div>
+            </div>
+            <div id="journal" class="row portfolio-block__gallery tab-pane">
+              <div class="col-lg-3 col-md-3 col-xs-6 col-sm-4 gallery__item"><img src="images/img5.jpg" class="gallery__item-img img-responsive"></div>
+              <div class="col-lg-3 col-md-3 col-xs-6 col-sm-4 gallery__item"><img src="images/img6.jpg" class="gallery__item-img img-responsive"></div>
+              <div class="col-lg-3 col-md-3 col-xs-6 col-sm-4 gallery__item"><img src="images/img7.jpg" class="gallery__item-img img-responsive"></div>
+              <div class="col-lg-3 col-md-3 col-xs-6 col-sm-4 gallery__item"><img src="images/img1.jpg" class="gallery__item-img img-responsive"></div>
+              <div class="col-lg-3 col-md-3 col-xs-6 col-sm-4 gallery__item"><img src="images/img2.jpg" class="gallery__item-img img-responsive"></div>
+            </div>
           </div>
         </div>
       </section>
@@ -194,7 +219,79 @@
           </div>
         </div>
       </section>
+      <section class="smoke-block">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <h2 class="smoke-block__title title_underline">contact</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <div class="row">
+                <form class="smoke-block__contact-form">
+                  <div class="col-lg-12 col-md-12 col-sm-12 contact-form__item">
+                    <div class="row">
+                      <div class="col-lg-5 col-md-5 col-sm-5">
+                        <div class="form-group">
+                          <label class="contact-form__text_uppecrace">full name</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-lg-offset-1 col-md-7 col-sm-7">
+                        <p class="input-description">
+                          Jujubes bear claw croissant wafer sweet lemon drops brownie chocolate bar.
+                          Sweet lollipop halvah tootsie roll cake fruitcake. Chocolate cake chocolate
+                          bar gingerbread lollipop tart. Jujubes bear claw donut chupa chups.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 contact-form__item">
+                    <div class="row">
+                      <div class="col-lg-5 col-md-5 col-sm-5">
+                        <div class="form-group">
+                          <label class="contact-form__text_uppecrace">email</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-lg-offset-1 col-md-7 col-sm-7">
+                        <p class="input-description">Linda Newman<br>W325 State Road 123<br>Mondovi, WI(Wisconsin) 98746-54321<br>(715) 946 - 1234</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 contact-form__item">
+                    <div class="form-group">
+                      <label class="contact-form__text_uppecrace">message</label>
+                      <textarea class="form-control form-textarea"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="form-group">
+                      <button class="btn-contact-form">message</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-    <footer class="footer"></footer>
+    <footer class="footer bottom-block">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-11 col-md-11 col-sm-11 col-xs-9">
+            <ul class="bottom-block__nav">
+              <li class="nav__item"><a href="#" class="nav__item-link">home</a></li>
+              <li class="nav__item"><a href="#" class="nav__item-link">services</a></li>
+              <li class="nav__item"><a href="#" class="nav__item-link">portfolio</a></li>
+              <li class="nav__item"><a href="#" class="nav__item-link">contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-1 col-md-1 col-sm-1 col-xs-3"><span class="bottom-block__copyright">2013&#169;</span></div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

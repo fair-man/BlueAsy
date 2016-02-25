@@ -22,17 +22,17 @@ html(lang="en")
                             i.glyphicon.glyphicon-align-justify
                     .col-lg-10.col-md-10.col-sm-9.header__navbar-body.collapse#demo
                         nav.header__nav
-                            ul.nav__list
+                            ul.nav__list.js-nav__list
                                 li.nav__list-item
-                                    a.list-item__link.list-item__link_active(href="#") home
+                                    a.list-item__link.list-item__link_active.js-list-item__link(href="/") home
                                 li.nav__list-item
-                                    a.list-item__link(href="#") services
+                                    a.list-item__link.js-list-item__link(href="#services") services
                                 li.nav__list-item
-                                    a.list-item__link(href="#") features
+                                    a.list-item__link.js-list-item__link(href="#") features
                                 li.nav__list-item
-                                    a.list-item__link(href="#") portfolio
+                                    a.list-item__link.js-list-item__link(href="#portfolio") portfolio
                                 li.nav__list-item
-                                    a.list-item__link(href="#") contact
+                                    a.list-item__link.js-list-item__link(href="#contact") contact
         .hero-block
             .container.container_vertical-align
                 .row
@@ -45,7 +45,7 @@ html(lang="en")
                 .container
                     .row
                         .col-lg-12
-                            h2.services-block__title.title_underline Services
+                            h2.services-block__title.title_underline#services Services
                     .row
                         .col-lg-3.col-md-3.col-sm-3.col-xs-6.services-block__services-item
                             h3.services-item__title.services-item__title-coffee Coffee
@@ -75,7 +75,7 @@ html(lang="en")
                 .container
                     .row
                         .col-lg-2.col-md-2.col-sm-2.col-xs-6
-                            h2.portfolio-block__title.title_underline.pull-left portfolio
+                            h2.portfolio-block__title.title_underline.pull-left#portfolio portfolio
                         .col-lg-10.col-md-10.col-sm-10.portfolio-block__dropdown.js-portfolio-block__dropdown
                             a.portfolio-block__dropdown-link.js-dropdown__link(href="#") all
                                 b.caret
@@ -109,7 +109,7 @@ html(lang="en")
                             .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
                                 img.gallery__item-img.img-responsive(src="images/img8.jpg")
                         .row.portfolio-block__gallery.tab-pane#panoramas
-                            .col-lg-3
+                            .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
                                 img.gallery__item-img.img-responsive(src="images/img8.jpg")
                             .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
                                 img.gallery__item-img.img-responsive(src="images/img3.jpg")
@@ -118,9 +118,9 @@ html(lang="en")
                             .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
                                 img.gallery__item-img.img-responsive(src="images/img5.jpg")
                         .row.portfolio-block__gallery.tab-pane#portraits
-                            .col-lg-3
+                            .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
                                 img.gallery__item-img.img-responsive(src="images/img1.jpg")
-                            .col-lg-3
+                            .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
                                 img.gallery__item-img.img-responsive(src="images/img8.jpg")
                             .col-lg-3.col-md-3.col-xs-6.col-sm-4.gallery__item
                                 img.gallery__item-img.img-responsive(src="images/img3.jpg")
@@ -220,7 +220,7 @@ html(lang="en")
                 .container
                     .row
                         .col-lg-12.col-md-12.col-sm-12
-                            h2.smoke-block__title.title_underline contact
+                            h2.smoke-block__title.title_underline#contact contact
                     .row
                         .col-lg-12.col-md-12.col-sm-12
                             .row

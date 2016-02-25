@@ -26,7 +26,8 @@ $('.js-dropdown__list').on('click','.list__item-link', function(e) {
 $('.js-nav__list').on('click', '.js-list-item__link', function(e) {
     e.preventDefault();
     var $attr = $(this).attr('href');
-    console.log($attr);
+    var top = $(document).find($attr).offset().top - 50;
+    $('body').animate({scrollTop: top}, 800);
 
 });
 

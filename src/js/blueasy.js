@@ -17,7 +17,7 @@ $dropdownLink.on('click', function(e) {
 
 $('.js-dropdown__list').on('click','.list__item-link', function(e) {
    var $elem = $(this);
-    $dropdownLink.html($elem.html() + '<b class="caret"></b>');
+    $dropdownLink.html('<b class="caret"></b>' + $elem.html());
    $('.portfolio-block__list').removeClass('portfolio-block__list-open');
 });
 
@@ -25,6 +25,9 @@ $('.js-nav__list').on('click', '.js-list-item__link', function(e) {
     e.preventDefault();
     var $attr = $(this).attr('href');
     var top = $(document).find($attr).offset().top - 50;
-    $('body').animate({scrollTop: top}, 800);
+    $('html, body').animate({scrollTop: top}, 800);
+});
 
+$('.js-open-menu').on('click', function(e) {
+    e.preventDefault();
 });

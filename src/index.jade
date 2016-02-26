@@ -18,7 +18,7 @@ html(lang="en")
                         a.header__logotype(href="/")
                             img(src="images/logotype.png")
                     .col-sm-9.col-xs-6.navbar-open
-                        a(href="#" data-toggle="collapse" data-target="#demo")
+                        a.js-open-menu(href="#" data-toggle="collapse" data-target="#demo")
                             i.glyphicon.glyphicon-align-justify
                     .col-lg-10.col-md-10.col-sm-9.header__navbar-body.collapse#demo
                         nav.header__nav
@@ -28,7 +28,7 @@ html(lang="en")
                                 li.nav__list-item
                                     a.list-item__link.js-list-item__link(href="#services") services
                                 li.nav__list-item
-                                    a.list-item__link.js-list-item__link(href="#") features
+                                    a.list-item__link.js-list-item__link(href="#features") features
                                 li.nav__list-item
                                     a.list-item__link.js-list-item__link(href="#portfolio") portfolio
                                 li.nav__list-item
@@ -77,8 +77,9 @@ html(lang="en")
                         .col-lg-2.col-md-2.col-sm-2.col-xs-6
                             h2.portfolio-block__title.title_underline.pull-left#portfolio portfolio
                         .col-lg-10.col-md-10.col-sm-10.portfolio-block__dropdown.js-portfolio-block__dropdown
-                            a.portfolio-block__dropdown-link.js-dropdown__link(href="#") all
+                            a.portfolio-block__dropdown-link.js-dropdown__link(href="#")
                                 b.caret
+                                | all
                             ul.portfolio-block__list.js-dropdown__list
                                 li.list__item
                                     a.list__item-link.list__item-link_active(href="#all" data-toggle="tab") all
@@ -165,21 +166,21 @@ html(lang="en")
             section.blue-block.twitter-block
                 .container
                     .row
-                        .col-lg-11.col-md-11.col-sm-11.col-xs-10
+                        .col-lg-11.col-md-11.col-sm-11.col-xs-9
                             h2.twitter-block__title.title_underline twitter
                             p.twitter-block__description
                                 | Unerdwear cookie liquorice. Cake donut cupcake lollipop soufflé candy. Chocolate
                                 | oat cake
                                 span  @cheesecake
                                 |  tootsie roll.
-                        .col-lg-1.col-md-1.col-sm-1.col-xs-2.twitter-block__right
+                        .col-lg-1.col-md-1.col-sm-1.col-xs-3.twitter-block__right
                             a.twitter-link(href="https://twitter.com/?lang=ru")
                                 i.icon.icon-twitter
             section.customer-block
                 .container
                     .row
                         .col-lg-12.col-xs-12
-                            h2.customer-block__title.title_underline Who is john doe?
+                            h2.customer-block__title.title_underline#features Who is john doe?
                     .row
                         .col-lg-6.col-xs-12
                             p.customer-block__description
@@ -262,14 +263,14 @@ html(lang="en")
             .container
                 .row
                     .col-lg-11.col-md-11.col-sm-11.col-xs-9
-                        ul.bottom-block__nav
+                        ul.bottom-block__nav.js-nav__list
                             li.nav__item
-                                a.nav__item-link(href="#") home
+                                a.nav__item-link(href="/") home
                             li.nav__item
-                                a.nav__item-link(href="#") services
+                                a.nav__item-link.js-list-item__link(href="#services") services
                             li.nav__item
-                                a.nav__item-link(href="#") portfolio
+                                a.nav__item-link.js-list-item__link(href="#portfolio") portfolio
                             li.nav__item
-                                a.nav__item-link(href="#") contact
-                    .col-lg-1.col-md-1.col-sm-1.col-xs-3
-                        span.bottom-block__copyright 2013&#169;
+                                a.nav__item-link.js-list-item__link(href="#contact") contact
+                    .col-lg-1.col-md-1.col-sm-1.col-xs-3.bottom-block__copyright
+                        span 2013&#169;

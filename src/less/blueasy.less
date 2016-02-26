@@ -110,6 +110,23 @@ body {
     .nav__list-item {
       float: none;
     }
+
+    .list-item__link {
+      display: block;
+
+      &:hover {
+        background: @color-grey;
+      }
+    }
+
+    .list-item__link_active {
+      border: 0;
+      color: @color-white;
+
+      &:hover {
+        color: @color-blue;
+      }
+    }
   }
 }
 
@@ -179,6 +196,69 @@ body {
       margin-top: -100px;
     }
   }
+
+  @media screen and (max-width: 737px) {
+    height: 414px;
+
+    .hero-block__title {
+
+      .title__top-text,
+      .title__bottom-text {
+        .line-height(50);
+      }
+    }
+
+    .container_vertical-align {
+      margin-top: -65px;
+    }
+
+  }
+
+  @media screen and (max-width: 668px) {
+    height: 375px;
+
+    .hero-block__title {
+
+      .title__top-text,
+      .title__bottom-text {
+        .line-height(50);
+      }
+    }
+
+    .container_vertical-align {
+      margin-top: -80px;
+    }
+  }
+
+  @media screen and (max-width: 569px) {
+    height: 320px;
+
+    .hero-block__title {
+
+      .title__top-text,
+      .title__bottom-text {
+        .line-height(50);
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    height: 320px;
+
+    .hero-block__title {
+      .font-size(30);
+    }
+  }
+
+  @media screen and (max-width: 376px) {
+    .hero-block__title {
+      .title__top-text,
+      .title__bottom-text {
+        .line-height(39);
+      }
+    }
+  }
+
 }
 
 .blue-block {
@@ -323,13 +403,21 @@ body {
 
 
   .caret {
-    margin-left: 5px;
+    margin-right: 5px;
   }
 
   @media screen and (max-width: @screen-sm) {
     display: block;
   }
 
+}
+
+.tab-content {
+  @media screen and (max-width: 481px) {
+    .col-xs-6 {
+      width: 100%;
+    }
+  }
 }
 
 .portfolio-block__list {
@@ -650,6 +738,12 @@ body {
 
   .quote {
     .sprite(@quote);
+
+    display: inline-block;
+  }
+
+  .col-xs-2 {
+    text-align: right;
   }
 }
 
@@ -665,12 +759,17 @@ body {
   display: block;
 
   @media screen and (max-width: @screen-sm) {
+    .box-shadow(0 1px 6px 2px @color-grey);
+
     display: none;
     position: absolute;
     top: 50px;
-    left: 0;
-    right: 0;
-    background: @brand-primary;
+    min-width: 135px;
+    padding-left: 0;
+    padding-right: 0;
+    right: 15px;
+    background: @color-blue;
+    border: 1px solid @color-white;
   }
 }
 
@@ -705,6 +804,7 @@ body {
   &:before {
     .size(100%, 100%);
 
+    max-width: 1920px;
     content: '';
     position: absolute;
     background: url(../images/smoke.jpg) no-repeat 50% 0;
@@ -848,5 +948,22 @@ body {
     }
   }
 
+  @media screen and (max-width: 520px) {
+    .nav__item {
+      float: none;
+    }
 
+    .nav__item:nth-child(1) {
+      padding-left: 15px;
+
+      &:before {
+        content: '';
+      }
+    }
+  }
+
+}
+
+.bottom-block__copyright {
+  text-align: right;
 }

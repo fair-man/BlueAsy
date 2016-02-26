@@ -16,13 +16,13 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6"><a href="/" class="header__logotype"><img src="images/logotype.png"></a></div>
-          <div class="col-sm-9 col-xs-6 navbar-open"><a href="#" data-toggle="collapse" data-target="#demo"><i class="glyphicon glyphicon-align-justify"></i></a></div>
+          <div class="col-sm-9 col-xs-6 navbar-open"><a href="#" data-toggle="collapse" data-target="#demo" class="js-open-menu"><i class="glyphicon glyphicon-align-justify"></i></a></div>
           <div id="demo" class="col-lg-10 col-md-10 col-sm-9 header__navbar-body collapse">
             <nav class="header__nav">
               <ul class="nav__list js-nav__list">
                 <li class="nav__list-item"><a href="/" class="list-item__link list-item__link_active">home</a></li>
                 <li class="nav__list-item"><a href="#services" class="list-item__link js-list-item__link">services</a></li>
-                <li class="nav__list-item"><a href="#" class="list-item__link js-list-item__link">features</a></li>
+                <li class="nav__list-item"><a href="#features" class="list-item__link js-list-item__link">features</a></li>
                 <li class="nav__list-item"><a href="#portfolio" class="list-item__link js-list-item__link">portfolio</a></li>
                 <li class="nav__list-item"><a href="#contact" class="list-item__link js-list-item__link">contact</a></li>
               </ul>
@@ -90,7 +90,7 @@
             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
               <h2 id="portfolio" class="portfolio-block__title title_underline pull-left">portfolio</h2>
             </div>
-            <div class="col-lg-10 col-md-10 col-sm-10 portfolio-block__dropdown js-portfolio-block__dropdown"><a href="#" class="portfolio-block__dropdown-link js-dropdown__link">all<b class="caret"></b></a>
+            <div class="col-lg-10 col-md-10 col-sm-10 portfolio-block__dropdown js-portfolio-block__dropdown"><a href="#" class="portfolio-block__dropdown-link js-dropdown__link"><b class="caret"></b>all</a>
               <ul class="portfolio-block__list js-dropdown__list">
                 <li class="list__item"><a href="#all" data-toggle="tab" class="list__item-link list__item-link_active">all</a></li>
                 <li class="list__item"><a href="#panoramas" data-toggle="tab" class="list__item-link">panoramas</a></li>
@@ -161,14 +161,14 @@
       <section class="blue-block twitter-block">
         <div class="container">
           <div class="row">
-            <div class="col-lg-11 col-md-11 col-sm-11 col-xs-10">
+            <div class="col-lg-11 col-md-11 col-sm-11 col-xs-9">
               <h2 class="twitter-block__title title_underline">twitter</h2>
               <p class="twitter-block__description">
                 Unerdwear cookie liquorice. Cake donut cupcake lollipop soufflé candy. Chocolate
                 oat cake<span> @cheesecake</span> tootsie roll.
               </p>
             </div>
-            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 twitter-block__right"><a href="https://twitter.com/?lang=ru" class="twitter-link"><i class="icon icon-twitter"></i></a></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-3 twitter-block__right"><a href="https://twitter.com/?lang=ru" class="twitter-link"><i class="icon icon-twitter"></i></a></div>
           </div>
         </div>
       </section>
@@ -176,7 +176,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-12 col-xs-12">
-              <h2 class="customer-block__title title_underline">Who is john doe?</h2>
+              <h2 id="features" class="customer-block__title title_underline">Who is john doe?</h2>
             </div>
           </div>
           <div class="row">
@@ -282,14 +282,14 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-11 col-md-11 col-sm-11 col-xs-9">
-            <ul class="bottom-block__nav">
-              <li class="nav__item"><a href="#" class="nav__item-link">home</a></li>
-              <li class="nav__item"><a href="#" class="nav__item-link">services</a></li>
-              <li class="nav__item"><a href="#" class="nav__item-link">portfolio</a></li>
-              <li class="nav__item"><a href="#" class="nav__item-link">contact</a></li>
+            <ul class="bottom-block__nav js-nav__list">
+              <li class="nav__item"><a href="/" class="nav__item-link">home</a></li>
+              <li class="nav__item"><a href="#services" class="nav__item-link js-list-item__link">services</a></li>
+              <li class="nav__item"><a href="#portfolio" class="nav__item-link js-list-item__link">portfolio</a></li>
+              <li class="nav__item"><a href="#contact" class="nav__item-link js-list-item__link">contact</a></li>
             </ul>
           </div>
-          <div class="col-lg-1 col-md-1 col-sm-1 col-xs-3"><span class="bottom-block__copyright">2013&#169;</span></div>
+          <div class="col-lg-1 col-md-1 col-sm-1 col-xs-3 bottom-block__copyright"><span>2013&#169;</span></div>
         </div>
       </div>
     </footer>

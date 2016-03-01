@@ -1,9 +1,9 @@
 var $header = $('.header');
 
-$(window).scroll(function(){
-    if ( $(this).scrollTop() > 660){
+$(document).scroll(function(){
+    if ( $(this).scrollTop() >= 660){
         $header.addClass('menu-grey');
-    } else if($(this).scrollTop() <= 660) {
+    } else {
         $header.removeClass('menu-grey');
     }
 });

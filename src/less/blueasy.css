@@ -7654,9 +7654,9 @@ body {
 .header {
   line-height: 150px;
   line-height: 15rem;
-  -o-transition: all 0.22s ease-in;
-  -webkit-transition: all 0.22s ease-in;
-  transition: all 0.22s ease-in;
+  -o-transition: all 0.12s ease-in;
+  -webkit-transition: all 0.12s ease-in;
+  transition: all 0.12s ease-in;
   height: 150px;
   background: rgba(53, 63, 70, 0.7);
   z-index: 10;
@@ -7676,9 +7676,9 @@ body {
 .header.menu-grey {
   line-height: 50px;
   line-height: 5rem;
-  -o-transition: all 0.22s ease-in;
-  -webkit-transition: all 0.22s ease-in;
-  transition: all 0.22s ease-in;
+  -o-transition: all 0.12s ease-in;
+  -webkit-transition: all 0.12s ease-in;
+  transition: all 0.12s ease-in;
   -webkit-box-shadow: 0 1px 8px 0 #353f46;
   box-shadow: 0 1px 8px 0 #353f46;
   height: 50px;
@@ -8493,8 +8493,6 @@ body {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
-  line-height: 60px;
-  line-height: 6rem;
   border: 2px solid #ffffff;
   background: transparent;
   color: #ffffff;
